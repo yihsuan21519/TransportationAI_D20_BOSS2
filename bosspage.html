@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>陳宜萱 的 AI 作品集</title>
+
+<style>
+:root{
+    --navy:#1e3a5f;
+    --orange:#fc7e15;
+    --bg:#ffffff;
+    --gray:#f5f7fa;
+    --text:#333;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Inter,"Microsoft JhengHei",sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.8;
+}
+
+header{
+    background:linear-gradient(135deg,var(--navy),#29588d);
+    color:white;
+    padding:70px 20px;
+    text-align:center;
+}
+
+header h1{
+    font-size:clamp(2rem,5vw,3.2rem);
+    margin-bottom:15px;
+}
+
+header p{
+    font-size:1.15rem;
+    opacity:.95;
+}
+
+.container{
+    width:min(1100px,92%);
+    margin:auto;
+}
+
+section{
+    padding:60px 0;
+    border-bottom:1px solid #ececec;
+}
+
+.section-title{
+    color:var(--navy);
+    font-size:1.9rem;
+    margin-bottom:28px;
+    position:relative;
+    display:inline-block;
+}
+
+.section-title::after{
+    content:"";
+    width:70%;
+    height:4px;
+    background:var(--orange);
+    position:absolute;
+    left:0;
+    bottom:-8px;
+}
+
+.summary{
+    background:var(--gray);
+    padding:28px;
+    border-radius:14px;
+}
+
+.card-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:22px;
+}
+
+.card{
+    background:white;
+    border:1px solid #e5e5e5;
+    border-top:5px solid var(--orange);
+    border-radius:14px;
+    padding:22px;
+    transition:.25s;
+}
+
+.card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 8px 22px rgba(0,0,0,.08);
+}
+
+.card h3{
+    color:var(--navy);
+    margin-bottom:12px;
+}
+
+.badge{
+    display:inline-block;
+    background:var(--orange);
+    color:white;
+    padding:5px 10px;
+    border-radius:999px;
+    font-size:.85rem;
+    margin-bottom:12px;
+}
+
+iframe{
+    width:100%;
+    height:560px;
+    border:none;
+    border-radius:14px;
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+    margin-top:20px;
+}
+
+ul{
+    padding-left:22px;
+}
+
+li{
+    margin-bottom:14px;
+}
+
+.highlight{
+    color:var(--orange);
+    font-weight:bold;
+}
+
+.contact{
+    background:var(--navy);
+    color:white;
+    border-radius:16px;
+    padding:30px;
+}
+
+.contact a{
+    color:#FFD8AE;
+    text-decoration:none;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    color:#666;
+    font-size:.9rem;
+}
+
+@media(max-width:768px){
+
+iframe{
+    height:300px;
+}
+
+header{
+    padding:50px 20px;
+}
+
+section{
+    padding:45px 0;
+}
+
+/* =========================
+   Project Impact
+========================= */
+
+.impact-intro{
+
+    margin:15px 0 35px;
+    color:#666;
+    font-size:1rem;
+
+}
+
+.impact-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:22px;
+
+}
+
+.impact-card{
+
+    background:white;
+    border-radius:18px;
+    padding:35px 25px;
+
+    text-align:center;
+
+    border:1px solid #e8e8e8;
+
+    transition:0.3s;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.05);
+
+}
+
+.impact-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 14px 30px rgba(0,0,0,.10);
+
+}
+
+.impact-number{
+
+    font-size:2.8rem;
+
+    font-weight:700;
+
+    color:#fc7e15;
+
+    margin-bottom:10px;
+
+}
+
+.impact-title{
+
+    font-size:1.05rem;
+
+    font-weight:600;
+
+    color:#1e3a5f;
+
+    margin-bottom:12px;
+
+}
+
+.impact-text{
+
+    color:#666;
+
+    line-height:1.7;
+
+    font-size:.95rem;
+
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>陳宜萱 的 AI 作品集</h1>
+    <p>物流業 OP｜4 週青年 AI 實戰養成班結業・智慧物流 × 資料分析 × AI 決策應用</p>
+</header>
+
+<div class="container">
+
+<section>
+
+<h2 class="section-title">Section 1｜4 週學習摘要</h2>
+
+<div class="summary">
+
+<p>
+這四週的 AI 實戰專案，我以「智慧物流」作為主軸，從資料清洗開始，一步一步完成資料分析、商業洞察、互動式 Dashboard、決策簡報以及 AI 應用整合。整個過程並不是單純學習 Python 或 AI 工具，而是學習如何把數據真正轉化為商業決策。
+</p>
+
+<br>
+
+<p>
+專案中，我使用 Python、Pandas、Plotly、Streamlit、Folium、NotebookLM 等工具，完成多個物流情境案例，包括倉庫 ABC 分析、配送 OTD 異常分析、供應鏈 Lead Time 與 Bullwhip Effect 分析，以及 What-if 情境模擬。我也建立完整的資料清洗流程，將原始資料整理成可重複執行的分析流程，再利用互動式 Dashboard 呈現 KPI，最後整理成主管決策簡報。
+</p>
+
+<br>
+
+<p>
+除了技術能力之外，我最大的收穫是建立了從 <span class="highlight">Viewer → Maker → Designer → Analyst（VMDA）</span> 的思考模式。以前我會把重點放在完成分析，現在更重視「分析可以解決什麼商業問題」、「主管可以依據哪些證據做決策」，以及如何透過 AI 協助建立更有效率的營運流程。未來希望持續朝資料分析、AI 應用與智慧供應鏈決策支援系統（DSS）方向發展，讓數據真正成為企業營運改善的驅動力。
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Section 2｜BOSS_I 決策簡報（NotebookLM）</h2>
+
+<p>
+<b>簡述：</b>本簡報整理四週智慧物流專案成果，從 KPI 建立、倉庫優化、配送分析到供應鏈整合，並透過 SCQA 與 MECE 架構，將分析結果轉化為主管可直接採取行動的決策建議。
+</p>
+
+<iframe
+src="https://docs.google.com/presentation/d/1Tff4bi9ZSIocmesP_s22CjGa6fw0VjXF/embed?start=false&loop=false&delayms=3000"
+allowfullscreen>
+</iframe>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Section 3｜學習亮點</h2>
+
+<div class="card-grid">
+
+<div class="card">
+<div class="badge">W1-W2</div>
+<h3>倉庫 ABC 重排與揀貨優化</h3>
+<p>
+利用 ABC Analysis 結合 Manhattan Distance 重新規劃 100 個 SKU 倉位，成功降低約 <b>58.5%</b> 的揀貨距離，大幅改善倉儲作業效率。
+</p>
+</div>
+
+<div class="card">
+<div class="badge">W3</div>
+<h3>OTD 配送異常分析</h3>
+<p>
+建立 IQR 異常偵測模型，發現 Route R-03 為主要瓶頸，並透過 What-if 模擬證明只需改善單一路線即可讓整體 OTD 提升超過 7%。
+</p>
+</div>
+
+<div class="card">
+<div class="badge">W4</div>
+<h3>供應鏈整合分析</h3>
+<p>
+串接採購、進貨與銷售三張資料表，分析 Bullwhip Effect 與 Lead Time 穩定性，從原因管理角度找出真正造成庫存積壓的決策問題。
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+    <h2 class="section-title">Section 4｜專案影響</h2>
+
+    <p class="impact-intro">
+        四週專案中，透過資料分析、流程優化與情境模擬，
+        將分析結果轉化為可量化的商業價值。
+    </p>
+
+    <div class="impact-grid">
+
+        <div class="impact-card">
+            <div class="impact-number">58.5%</div>
+            <div class="impact-title">Picking Distance Reduction</div>
+            <div class="impact-text">
+                ABC Analysis + Manhattan Distance<br>
+                倉儲揀貨距離降低
+            </div>
+        </div>
+
+        <div class="impact-card">
+            <div class="impact-number">249</div>
+            <div class="impact-title">Delivery Outliers</div>
+            <div class="impact-text">
+                IQR 異常偵測<br>
+                找出配送異常案件
+            </div>
+        </div>
+
+        <div class="impact-card">
+            <div class="impact-number">89.24%</div>
+            <div class="impact-title">Simulated OTD</div>
+            <div class="impact-text">
+                What-if Analysis<br>
+                模擬改善後 OTD
+            </div>
+        </div>
+
+        <div class="impact-card">
+            <div class="impact-number">3</div>
+            <div class="impact-title">Integrated Data Tables</div>
+            <div class="impact-text">
+                Purchase × Receipt × Sales<br>
+                供應鏈整合分析
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Section 5｜我想接的題目方向</h2>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>智慧物流 AI</h3>
+<p>
+運用 AI 與資料分析協助物流中心提升配送效率、倉儲規劃與營運 KPI 管理。
+</p>
+</div>
+
+<div class="card">
+<h3>供應鏈決策支援系統</h3>
+<p>
+建立整合採購、庫存、銷售與需求預測的 Decision Support System（DSS），協助企業做出更好的營運決策。
+</p>
+</div>
+
+<div class="card">
+<h3>互動式資料產品</h3>
+<p>
+利用 Python、Streamlit 與生成式 AI 建立 Dashboard、AI Agent 與決策工具，讓資料分析真正落地到企業流程。
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Section 6｜聯絡資訊</h2>
+
+<div class="contact">
+
+<p><strong>Email</strong><br>
+yihsuan21519@gmail.com
+</p>
+
+<br>
+
+<p><strong>GitHub</strong><br>
+https://github.com/your-account
+</p>
+
+<br>
+
+<p>
+歡迎交流智慧物流、資料分析、AI 應用、Python、商業分析及供應鏈相關合作機會。
+</p>
+
+</div>
+
+</section>
+
+</div>
+
+<footer>
+© 2026 陳宜萱｜AI Portfolio ・ Smart Logistics × Data Analytics × Generative AI
+</footer>
+
+</body>
+</html>
